@@ -7,25 +7,47 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #111;
-    color: #fff;
+    color: #f8ee0b;
+    padding-top: 230px;
 }
 
 header {
-    padding: 15px 30px;
+    background: #000;
+    
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+
 }
 
 header .logo img {
     height: 150px;
 }
 
+.menu {
+    background: #111;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 20px 0;
+    position: fixed;
+    top: 150px;     /* aparece logo depois do header */
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+
 .menu a {
-    color: #ffcc00;
+    color: #f8ee0b;
     text-decoration: none;
     font-weight: bold;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
     transition: color 0.4s;
 }
 
@@ -44,9 +66,9 @@ header .logo img {
 .produto {
     background-color: #111;
     border-radius: 8px;
-    width: 200px;
+    width: 300px;
     text-align: center;
-    padding: 15px;
+    padding: 5px;
     transition: transform 0.2s;
 }
 
@@ -57,4 +79,10 @@ header .logo img {
 
 .produto:hover {
     transform: scale(1.2);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #222;
 }
