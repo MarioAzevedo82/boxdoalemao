@@ -76,19 +76,18 @@ header .logo img {
     display: flex;
     justify-content: center;
     gap: 40px;
-    padding: 20px 0;
-    position: fixed;
-    top: 150px;     /* aparece logo depois do header */
-    left: 0;
+    padding: 5px 0;
+    position: relative;
+    top: 0;    
+    margin-top: 0;
     width: 100%;
-    z-index: 999;
 }
 
 .menu a {
     color: #f8ee0b;
     text-decoration: none;
     font-weight: bold;
-    font-size: 1.1rem;
+    font-size: 1rem;
     letter-spacing: 2px;
     transition: color 0.4s;
 }
@@ -140,7 +139,7 @@ footer {
     }
 
     .contatos {
-        gap: 10px;
+        gap: 10px
     }
 
     .contatos a {
@@ -148,8 +147,29 @@ footer {
     }
 }
 
+
 @media (max-width: 1080px) { 
     .produto {
         width: calc(50% - 15px);
+    }
 }
+
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        gap: 5px;       
+    }
+
+    .menu a {
+        font-size: 0.95rem;
+        line-height: 1;
+        pa
+    }
+
+    body {
+        padding-top: 150px;
+    }
+}
+
+
 
